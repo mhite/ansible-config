@@ -2,7 +2,6 @@
 ---
 # Home-specific Homebrew packages
 home_homebrew_packages:
-  - youtube-dl
   - ffmpeg
   - mas  # Mac App Store CLI
   - goreleaser
