@@ -1,0 +1,16 @@
+[work_laptops]
+work-laptop-1 ansible_connection=local
+
+[home_laptops]
+mattirl ansible_connection=local
+
+[laptops:children]
+work_laptops
+home_laptops
+
+# Future expansion
+[home_servers]
+# home-server-1 will go here later
+
+[cloud_servers]
+# future cloud servers will go here

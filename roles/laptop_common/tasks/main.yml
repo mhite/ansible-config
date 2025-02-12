@@ -1,0 +1,5 @@
+# Common laptop tasks
+---
+- name: Include OS-specific tasks
+  include_tasks: "{{ ansible_os_family | lower }}.yml"
+  when: ansible_os_family | lower in ['darwin']  # Add 'linux' when needed

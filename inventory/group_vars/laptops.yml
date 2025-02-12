@@ -1,0 +1,30 @@
+# Variables that apply to ALL systems
+---
+# Common Homebrew packages for all Mac systems
+common_homebrew_packages:
+  - fish
+  - lftp
+  - font-fira-code-nerd-font
+  - golang
+  - multipass
+  - git
+  - git-delta
+  - terraform
+  - vim
+  - curl
+  - wget
+  - htop
+  - tree
+  - jq
+
+# Common Homebrew casks for all Mac systems
+common_homebrew_casks:
+  - brave-browser
+  - tg-pro
+  - syncthing
+  - fork
+  - jiggler
+  - alacritty
+  - licecap
+  - muzzle
+  - visual-studio-code

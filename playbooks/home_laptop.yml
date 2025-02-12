@@ -1,0 +1,15 @@
+---
+- hosts: home_laptops
+  roles:
+    - role: laptop_common
+    - role: home_laptop
+
+  pre_tasks:
+    - name: Debug common_homebrew_packages variable
+      debug:
+        var: common_homebrew_packages
+
+  tasks:
+    - name: Verify home-specific configurations
+      debug:
+        msg: "Configuring home laptop for {{ ansible_user_id }}"

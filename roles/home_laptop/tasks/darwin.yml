@@ -1,0 +1,24 @@
+# Home-specific macOS tasks
+---
+- name: Install home-specific Homebrew packages
+  homebrew:
+    name: "{{ home_homebrew_packages }}"
+    state: present
+
+- name: Install home-specific Homebrew casks
+  homebrew_cask:
+    name: "{{ home_homebrew_casks }}"
+    state: present
+    accept_external_apps: true
+
+# Optional: Install Mac App Store apps if 'mas' is installed
+- name: Check if mas is installed
+  command: which mas
+  register: mas_check
+  changed_when: false
+  ignore_errors: true
+
+- name: Sign in to Mac App Store
+  command: mas signin "{{ mas_email }}"
+  when: mas_check.rc == 0 and mas_email is defined
+  ignore_errors: true  # Will fail if already signed in, which is fine

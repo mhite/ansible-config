@@ -1,0 +1,16 @@
+# Common macOS laptop tasks
+---
+- name: Update Homebrew
+  homebrew:
+    update_homebrew: true
+
+- name: Install common Homebrew packages
+  homebrew:
+    name: "{{ common_homebrew_packages }}"
+    state: present
+
+- name: Install common Homebrew casks
+  homebrew_cask:
+    name: "{{ common_homebrew_casks }}"
+    state: present
+    accept_external_apps: true

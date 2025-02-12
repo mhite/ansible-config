@@ -1,0 +1,6 @@
+# Variables specific to work laptops
+---
+# Any host-specific overrides would go here
+# Work-specific Homebrew packages
+work_homebrew_packages:
+  - slack
