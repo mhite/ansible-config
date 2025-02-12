@@ -14,6 +14,8 @@
     name: "{{ home_homebrew_casks | difference(vm_incompatible_casks) if is_virtual else home_homebrew_casks }}"
     state: present
     accept_external_apps: true
+  environment:
+    HOMEBREW_CASK_OPTS: "--no-quarantine"
 
 # Optional: Install Mac App Store apps if 'mas' is installed
 - name: Check if mas is installed
