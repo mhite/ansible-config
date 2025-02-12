@@ -1,16 +1,20 @@
 # Common macOS laptop tasks
 ---
+- name: Check if running in VM
+  set_fact:
+    is_virtual: "{{ ansible_virtualization_type != 'none' }}"
+
 - name: Update Homebrew
   homebrew:
     update_homebrew: true
 
 - name: Install common Homebrew packages
   homebrew:
-    name: "{{ common_homebrew_packages }}"
+    name: "{{ common_homebrew_packages | difference(vm_incompatible_packages) if is_virtual else common_homebrew_packages }}"
     state: present
 
 - name: Install common Homebrew casks
   homebrew_cask:
-    name: "{{ common_homebrew_casks }}"
+    name: "{{ common_homebrew_casks | difference(vm_incompatible_casks) if is_virtual else common_homebrew_casks }}"
     state: present
     accept_external_apps: true

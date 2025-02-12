@@ -6,7 +6,6 @@ common_homebrew_packages:
   - lftp
   - font-fira-code-nerd-font
   - golang
-  - multipass
   - git
   - git-delta
   - terraform
@@ -28,3 +27,10 @@ common_homebrew_casks:
   - licecap
   - muzzle
   - visual-studio-code
+
+# Packages that won't work in VM environments (common across all laptops)
+vm_incompatible_packages:
+  - multipass
+
+vm_incompatible_casks:
+  - utm

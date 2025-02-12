@@ -1,13 +1,17 @@
 # Home-specific macOS tasks
 ---
+- name: Check if running in VM
+  set_fact:
+    is_virtual: "{{ ansible_virtualization_type != 'none' }}"
+
 - name: Install home-specific Homebrew packages
   homebrew:
-    name: "{{ home_homebrew_packages }}"
+    name: "{{ home_homebrew_packages | difference(vm_incompatible_packages) if is_virtual else home_homebrew_packages }}"
     state: present
 
 - name: Install home-specific Homebrew casks
   homebrew_cask:
-    name: "{{ home_homebrew_casks }}"
+    name: "{{ home_homebrew_casks | difference(vm_incompatible_casks) if is_virtual else home_homebrew_casks }}"
     state: present
     accept_external_apps: true
 
