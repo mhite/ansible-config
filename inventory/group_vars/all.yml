@@ -1,0 +1,8 @@
+# Variables that apply to ALL hosts
+---
+# Packages that won't work in VM environments
+vm_incompatible_packages:
+  - multipass
+
+vm_incompatible_casks:
+  - utm
