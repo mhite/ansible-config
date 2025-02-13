@@ -11,34 +11,77 @@ home_homebrew_packages:
 # Home-specific Homebrew casks
 home_homebrew_casks:
   - ableton-live-suite
-  - appcleaner
+  - alacritty
+  - android-studio
+  - anydesk
   - anythingllm
+  - appcleaner
   - arq
+  - audacity
   - audiobook-builder
   - blackhole-16ch
+  - brave-browser
+  - capcut
+  - cursor
   - cyberduck
+  - dash
+  - devdocs
+  - diffmerge
   - diffusionbee
   - discord
+  - elgato-control-center
+  - eloston-chromium
+  - firefox
+  - freac
+  - gnucash
+  - google-cloud-sdk
+  - hex-fiend
   - imhex
   - itsycal
   - jdownloader
-  - keka
   - keep-it
+  - keka
+  - knockknock
+  - little-snitch
+  - logitech-camera-settings
   - macdown
+  - marta
+  - michaelvillar-timer
+  - microsoft-azure-storage-explorer
   - minecraft
+  - mitmproxy
+  - mixxx
   - mp3tag
+  - multipass
   - netnewswire
   - obs
   - ocenaudio
+  - protokol
+  - reaper
+  - sf-symbols
+  - shortcat
+  - shottr
+  - sloth
   - spotify
   - steam
+  - stremio
   - swinsian
+  - tailscale
+  - taskexplorer
   - telegram
+  - temurin
+  - tg-pro
   - touch-portal
+  - touchdesigner
   - transmission
+  - trex
   - utm
+  - visual-studio-code
   - vlc
   - whatsapp
+  - windows-app
   - wireshark
   - xld
   - yate
+  - zed
+  - zen-browser

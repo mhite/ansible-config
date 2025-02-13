@@ -4,7 +4,6 @@
 common_homebrew_packages:
   - curl
   - fish
-  - font-fira-code-nerd-font
   - git
   - git-delta
   - golang
@@ -12,6 +11,7 @@ common_homebrew_packages:
   - jq
   - lftp
   - multipass
+  - starship  # prompt
   - terraform
   - tree
   - vim
@@ -21,10 +21,14 @@ common_homebrew_packages:
 common_homebrew_casks:
   - alacritty
   - brave-browser
+  - deskpad
+  - font-fira-code-nerd-font
   - fork
   - jiggler
   - licecap
   - muzzle
+  - raycast
   - syncthing
   - tg-pro
   - visual-studio-code
+  - zoom
