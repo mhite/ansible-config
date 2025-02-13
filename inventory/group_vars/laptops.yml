@@ -2,30 +2,29 @@
 ---
 # Common Homebrew packages for all Mac systems
 common_homebrew_packages:
+  - curl
   - fish
-  - lftp
   - font-fira-code-nerd-font
-  - golang
-  - multipass
   - git
   - git-delta
-  - terraform
-  - vim
-  - curl
-  - wget
+  - golang
   - htop
-  - tree
   - jq
+  - lftp
+  - multipass
+  - terraform
+  - tree
+  - vim
+  - wget
 
 # Common Homebrew casks for all Mac systems
 common_homebrew_casks:
+  - alacritty
   - brave-browser
-  - tg-pro
-  - syncthing
   - fork
   - jiggler
-  - alacritty
   - licecap
   - muzzle
+  - syncthing
+  - tg-pro
   - visual-studio-code
-  

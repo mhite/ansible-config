@@ -3,43 +3,42 @@
 # Home-specific Homebrew packages
 home_homebrew_packages:
   - ffmpeg
-  - mas  # Mac App Store CLI
   - goreleaser
   - hugo
-  - ffmpeg
   - kaitai-struct-compiler
+  - mas  # Mac App Store CLI
 
 # Home-specific Homebrew casks
 home_homebrew_casks:
-  - arq
-  - spotify
-  - swinsian
-  - vlc
-  - cyberduck
   - ableton-live-suite
-  - audiobook-builder
-  - keep-it
-  - netnewswire
-  - keka
-  - ocenaudio
-  - obs
-  - telegram
-  - blackhole-16ch
-  - discord
-  - steam
-  - transmission
-  - wireshark
-  - imhex
   - appcleaner
-  - jdownloader
-  - touch-portal
+  - anythingllm
+  - arq
+  - audiobook-builder
+  - blackhole-16ch
+  - cyberduck
   - diffusionbee
-  - utm
+  - discord
+  - imhex
+  - itsycal
+  - jdownloader
+  - keka
+  - keep-it
   - macdown
-  - xld
   - minecraft
   - mp3tag
-  - yate
-  - itsycal
+  - netnewswire
+  - obs
+  - ocenaudio
+  - spotify
+  - steam
+  - swinsian
+  - telegram
+  - touch-portal
+  - transmission
+  - utm
+  - vlc
   - whatsapp
-  - anythingllm
+  - wireshark
+  - xld
+  - yate
