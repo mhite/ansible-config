@@ -42,7 +42,7 @@ home_homebrew_casks:
   - keka
   - knockknock
   - little-snitch
-  - logitech-camera-settings
+  # - logitech-camera-settings  # Requires Rosetta 2
   - macdown
   - marta
   - michaelvillar-timer
