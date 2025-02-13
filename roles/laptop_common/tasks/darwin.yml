@@ -18,5 +18,5 @@
     name: "{{ common_homebrew_casks | difference(vm_incompatible_casks) if is_virtual else common_homebrew_casks }}"
     state: present
     accept_external_apps: true
-  environment:
-    HOMEBREW_CASK_OPTS: "--no-quarantine"
+    install_options: 'no-quarantine'
+
