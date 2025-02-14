@@ -25,7 +25,6 @@ home_homebrew_casks:
   - cursor
   - cyberduck
   - dash
-  - diffmerge
   - diffusionbee
   - discord
   - elgato-control-center
@@ -43,7 +42,6 @@ home_homebrew_casks:
   - knockknock
   - little-snitch
   # - logitech-camera-settings  # Requires Rosetta 2
-  - macdown
   - marta
   - michaelvillar-timer
   - microsoft-azure-storage-explorer
@@ -52,6 +50,7 @@ home_homebrew_casks:
   - mixxx
   - mp3tag
   - multipass
+  - netlify-cli
   - netnewswire
   - obs
   - ocenaudio

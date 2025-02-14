@@ -2,30 +2,46 @@
 ---
 # Common Homebrew packages for all Mac systems
 common_homebrew_packages:
+  - asdf
+  - chezmoi
   - curl
+  - dnstracer
   - fish
+  - fping
   - git
   - git-delta
   - golang
+  - graphviz
+  - hping
   - htop
   - jq
   - lftp
+  - mtr
   - multipass
+  - pulumi
+  - sipcalc
   - starship  # prompt
+  - tcptrace
+  - tcptraceroute
   - terraform
   - tree
   - vim
+  - watch
   - wget
+  - yq
 
 # Common Homebrew casks for all Mac systems
 common_homebrew_casks:
   - alacritty
   - brave-browser
   - deskpad
+  - diffmerge
+  - dozer
   - font-fira-code-nerd-font
   - fork
   - jiggler
   - licecap
+  - macdown
   - muzzle
   - raycast
   - syncthing
