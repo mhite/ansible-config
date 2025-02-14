@@ -7,6 +7,7 @@ home_homebrew_packages:
   - hugo
   - kaitai-struct-compiler
   - mas  # Mac App Store CLI
+  - netlify-cli
 
 # Home-specific Homebrew casks
 home_homebrew_casks:
@@ -50,7 +51,6 @@ home_homebrew_casks:
   - mixxx
   - mp3tag
   - multipass
-  - netlify-cli
   - netnewswire
   - obs
   - ocenaudio
