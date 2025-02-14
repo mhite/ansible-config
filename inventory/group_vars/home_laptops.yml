@@ -48,7 +48,7 @@ home_homebrew_casks:
   - microsoft-azure-storage-explorer
   - minecraft
   - mitmproxy
-  - mixxx
+  # - mixxx
   - mp3tag
   - multipass
   - netnewswire
