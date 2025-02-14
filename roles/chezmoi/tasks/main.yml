@@ -1,10 +1,6 @@
 ---
 - name: Initialize chezmoi repository from repo
   ansible.builtin.command:
-    cmd: chezmoi init {{ chezmoi_https_repo }}
+    cmd: chezmoi init --apply {{ chezmoi_https_repo }}
   args:
     creates: ~/.local/share/chezmoi
-
-- name: Apply chezmoi dotfiles
-  ansible.builtin.command:
-    cmd: chezmoi apply
