@@ -8,6 +8,7 @@
   homebrew:
     name: "{{ home_homebrew_packages | difference(vm_incompatible_packages) if is_virtual else home_homebrew_packages }}"
     state: present
+    force_formula: true
 
 - name: Install home-specific Homebrew casks
   homebrew_cask:

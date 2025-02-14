@@ -12,6 +12,7 @@
   homebrew:
     name: "{{ common_homebrew_packages | difference(vm_incompatible_packages) if is_virtual else common_homebrew_packages }}"
     state: present
+    force_formula: true
 
 - name: Install common Homebrew casks
   homebrew_cask:
@@ -19,4 +20,3 @@
     state: present
     accept_external_apps: true
     install_options: 'no-quarantine'
-
