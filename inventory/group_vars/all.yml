@@ -7,4 +7,4 @@ vm_incompatible_casks:
   - multipass
   - utm
 
-chezmoi_https_repo: "https://github.com/mhite/dotfiles.git"
+chezmoi_repo: "git@github.com:mhite/dotfiles.git"
