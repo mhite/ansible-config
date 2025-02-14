@@ -16,7 +16,7 @@
     state: present
     accept_external_apps: true
     install_options: 'no-quarantine'
-    sudo_password: "{{ ansible_become_pass }}"
+    sudo_password: "{{ sudo_pass }}"
 
 # Optional: Install Mac App Store apps if 'mas' is installed
 - name: Check if mas is installed

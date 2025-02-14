@@ -1,5 +1,10 @@
 ---
 - hosts: work_laptops
+  vars_prompt:
+    - name: sudo_pass
+      prompt: "Enter sudo password for cask"
+      private: yes
+
   roles:
     - role: laptop_common
     - role: work_laptop
