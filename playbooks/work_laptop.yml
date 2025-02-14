@@ -8,6 +8,7 @@
   roles:
     - role: laptop_common
     - role: work_laptop
+    - role: chezmoi
 
   tasks:
     - name: Verify work-specific configurations

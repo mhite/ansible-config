@@ -6,3 +6,5 @@ vm_incompatible_packages: []
 vm_incompatible_casks:
   - multipass
   - utm
+
+chezmoi_repo: "git@github.com:mhite/dotfiles.git"
