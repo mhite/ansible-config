@@ -16,7 +16,6 @@ common_homebrew_packages:
   - jq
   - lftp
   - mtr
-  - multipass
   - pulumi
   - sipcalc
   - starship  # prompt
@@ -40,6 +39,7 @@ common_homebrew_casks:
   - jiggler
   - licecap
   - macdown
+  - multipass
   - muzzle
   - raycast
   - syncthing
