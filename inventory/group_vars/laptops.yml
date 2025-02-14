@@ -12,7 +12,6 @@ common_homebrew_packages:
   - git-delta
   - golang
   - graphviz
-  - hping
   - htop
   - jq
   - lftp
