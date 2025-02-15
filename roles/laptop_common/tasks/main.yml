@@ -3,3 +3,38 @@
 - name: Include OS-specific tasks
   include_tasks: "{{ ansible_os_family | lower }}.yml"
   when: ansible_os_family | lower in ['darwin']  # Add 'linux' when needed
+
+- name: Detect Fish shell location
+  command: which fish
+  register: fish_path
+  changed_when: false
+  ignore_errors: yes
+
+- name: Debug - Output Fish path
+  debug:
+    var: fish_path.stdout
+
+- name: Set fact for Fish installation status
+  set_fact:
+    fish_installed: "{{ fish_path.rc == 0 and fish_path.stdout != '' }}"
+
+- name: Configure Fish shell
+  block:
+    - name: Add Fish to /etc/shells
+      lineinfile:
+        path: /etc/shells
+        line: "{{ fish_path.stdout }}"
+        state: present
+      become: yes
+
+    - name: Change default shell to Fish
+      user:
+        name: "{{ ansible_user_id }}"
+        shell: "{{ fish_path.stdout }}"
+      become: yes
+  when: fish_installed
+
+- name: Warning - Fish not installed or not found
+  debug:
+    msg: "Fish shell was not found. Skipping Fish configuration."
+  when: not fish_installed
