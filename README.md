@@ -5,32 +5,38 @@ This repository contains Ansible playbooks for managing work and home laptops.
 ## Prerequisites
 
 ### For macOS
+
 1. Install Homebrew:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Install Ansible via Homebrew:
+2. Ensure Homebrew is in your PATH:
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+3. Install Ansible via Homebrew:
 ```bash
 brew install ansible
 ```
 
-3. For Apple Silicon Macs (M1/M2), ensure Homebrew is in your PATH:
+4. Get rid of sudo_lecture
 ```bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
-source ~/.zshrc
+sudo ls
 ```
 
 ## Usage
 
 For work laptop:
 ```bash
-ansible-playbook playbooks/work_laptop.yml --limit work-laptop-1
+ansible-playbook playbooks/work_laptop.yml --limit work-laptop-1 -v -k
 ```
 
 For home laptop:
 ```bash
-ansible-playbook playbooks/home_laptop.yml --limit home-laptop-1
+ansible-playbook playbooks/home_laptop.yml --limit mattirl -v -K
 ```
 
 ## Structure
