@@ -9,6 +9,8 @@
     - role: laptop_common
     - role: home_laptop
     - role: chezmoi
+      tags:
+        - chezmoi
 
   pre_tasks:
     - name: Debug common_homebrew_packages variable
