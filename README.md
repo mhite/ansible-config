@@ -31,7 +31,7 @@ sudo ls
 
 For work laptop:
 ```bash
-ansible-playbook playbooks/work_laptop.yml --limit work-laptop-1 -v -k
+ansible-playbook playbooks/work_laptop.yml --limit work-laptop-1 -v -K
 ```
 
 For home laptop:
