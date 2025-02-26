@@ -1,8 +1,17 @@
 # Common macOS laptop tasks
 ---
-- name: Check if running in VM
+- name: Check if running in a virtual environment
+  command: sysctl -n machdep.cpu.brand_string
+  register: cpu_brand
+  changed_when: false
+
+- name: Set fact for virtualization status
   set_fact:
-    is_virtual: "{{ ansible_virtualization_type != 'none' }}"
+    is_virtual: "{{ cpu_brand.stdout.endswith('(Virtual)') }}"
+
+- name: Display virtualization status
+  debug:
+    msg: "This system is {{ 'virtual' if is_virtual else 'physical' }}"
 
 - name: Update Homebrew
   homebrew:
