@@ -2,5 +2,7 @@
 ---
 # Any host-specific overrides would go here
 # Work-specific Homebrew packages
-work_homebrew_packages:
+work_homebrew_packages: []
+
+work_homebrew_casks:
   - slack
