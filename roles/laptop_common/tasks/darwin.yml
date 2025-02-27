@@ -65,3 +65,25 @@
     key: NSAutomaticDashSubstitutionEnabled
     type: bool
     value: "false"
+
+- name: Disable natural scroll for mouse and trackpad
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: "false"
+    state: present
+
+- name: Set keyboard repeat rate
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: KeyRepeat
+    type: int
+    value: "0"
+
+- name: Set delay until repeat (in milliseconds)
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: int
+    value: "0"
