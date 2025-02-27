@@ -30,3 +30,38 @@
     accept_external_apps: true
     install_options: 'no-quarantine'
     sudo_password: "{{ sudo_pass }}"
+
+- name: Automatically hide and show the Dock
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: "true"
+
+- name: Remove the auto-hiding Dock delay
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: autohide-delay
+    type: float
+    value: "0"
+
+- name: Remove the animation when hiding/showing the Dock
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: autohide-time-modifier
+    type: float
+    value: "0"
+
+- name: Disable smart quotes as they’re annoying when typing code
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: "false"
+
+- name: Disable smart dashes as they’re annoying when typing code
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: "false"
