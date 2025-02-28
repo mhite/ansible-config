@@ -36,6 +36,7 @@ common_homebrew_casks:
   - diffmerge
   - font-fira-code-nerd-font
   - fork
+  - google-cloud-sdk
   - jiggler
   - licecap
   - macdown
