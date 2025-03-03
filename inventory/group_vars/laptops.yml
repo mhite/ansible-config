@@ -15,6 +15,7 @@ common_homebrew_packages:
   - htop
   - jq
   - lftp
+  - lima
   - mtr
   - pulumi
   - sipcalc
