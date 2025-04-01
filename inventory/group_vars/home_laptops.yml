@@ -44,6 +44,7 @@ home_homebrew_casks:
   - little-snitch
   # - logitech-camera-settings  # Requires Rosetta 2
   - marta
+  - meld-studio
   - michaelvillar-timer
   - microsoft-azure-storage-explorer
   - minecraft
