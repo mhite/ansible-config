@@ -23,6 +23,7 @@ common_homebrew_packages:
   - tcptrace
   - tcptraceroute
   - terraform
+  - tio
   - tree
   - vim
   - watch
